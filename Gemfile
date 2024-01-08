@@ -16,6 +16,7 @@ gem "sassc-rails"
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
+gem 'email_validator', require: 'email_validator/strict'
 
 gem "image_processing", "~> 1.2"
 
