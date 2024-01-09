@@ -1,0 +1,11 @@
+<%= render @workout  %>
+
+<div>
+  <% if @user_buy_current_workout %>
+    <%= link_to "Отказаться от тренировки", users_workouts_cancel_path(@workout) %> |
+  <% else %>
+    <%= link_to "Купить", users_workouts_buy_path(@workout) %> |
+<% end %>
+  <%= link_to "Вернуться ко всем тренировкам", workouts_path %>
+
+</div>

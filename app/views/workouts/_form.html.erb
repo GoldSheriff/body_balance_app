@@ -1,0 +1,17 @@
+<%= form_with(model: workout) do |form| %>
+   
+  
+    <div>
+      <%= form.label :title, style: "display: block" %>
+      <%= form.text_field :title %>
+    </div>
+  
+    <div>
+      <%= form.label :descriprtion, style: "display: block" %>
+      <%= form.text_field :descriprtion %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>

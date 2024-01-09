@@ -1,0 +1,18 @@
+<%= link_to 'Главная', workouts_path %>
+
+<h1>Админ</h1>
+
+<%= link_to 'Новая тренировка', new_workout_path %>
+
+<h1>Все тренировки</h1>
+
+<div id="workouts">
+  <% @workouts.each do |workout| %>
+    <%= render workout %>
+    <p>
+      <%= link_to "Подробнее", workout %>
+      <%= link_to "Редактировать", edit_workout_path(workout) %>
+      <%= button_to "Удалить тренировку", workout, method: :delete %>
+    </p>
+  <% end %>
+</div>

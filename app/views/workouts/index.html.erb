@@ -1,0 +1,16 @@
+<%= link_to 'Мой профиль', profile_path %>
+<%= link_to 'Админ', :admin_page %>
+
+<h1>Все тренировки</h1>
+
+
+
+
+<div id="workouts">
+  <% @workouts.each do |workout| %>
+    <%= render workout %>
+    <p>
+      <%= link_to "Подробнее", workout %>
+    </p>
+  <% end %>
+</div>

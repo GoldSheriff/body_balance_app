@@ -1,0 +1,9 @@
+<h1>Редактировать тренировку</h1>
+
+<%= render "form", workout: @workout %>
+
+<br>
+
+<div>
+  <%= link_to "Подробнее", @workout %> |
+  <%= link_to "Вернуться ко всем тренировкам", workouts_path %>

@@ -19,6 +19,7 @@ gem "turbo-rails"
 gem 'email_validator', require: 'email_validator/strict'
 
 gem "image_processing", "~> 1.2"
+gem "pundit", "~> 2.3"
 
 group :development, :test do
   gem "byebug", "~> 11.1", ">= 11.1.3"
